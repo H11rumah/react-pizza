@@ -1,0 +1,53 @@
+@import "../variables";
+
+.categories {
+    overflow-x: auto;
+
+    @media (max-width: 940px) {
+        width: 100%;
+    }
+
+    &::-webkit-scrollbar {
+        height: 8px;
+        background-color: #dbdbdb;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #282828;
+        border-radius: 10px;
+    }
+
+    ul {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 5px;
+
+        li {
+            background-color: #f9f9f9;
+            padding: 13px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.1s ease-in-out;
+            @include noselect();
+
+            &:hover {
+                background-color: darken(#f9f9f9, 2%);
+            }
+
+            &:active {
+                background-color: darken(#f9f9f9, 5%);
+            }
+
+            &.active {
+                background-color: #282828;
+                color: #fff;
+            }
+        }
+    }
+}
