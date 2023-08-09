@@ -2,4 +2,4 @@
 
 React Pizza - приложение для заказа пиццы. Получение пицц с сервера (MockAPI), сортировка, фильтрация, взаимодействие с корзиной товаров (добавление, удаление, авто расчёт стоимости товаров).
 
-Клиент: [TypeScript], [React], [Redux Toolkit], [React Router], [SCSS].
+Стек: [TypeScript], [React], [Redux Toolkit], [React Router], [SCSS].
